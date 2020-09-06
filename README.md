@@ -1,5 +1,6 @@
-# ad-crawler
-Crawl the top 100 websites and detect third party requests and compare with ad-block
+# Crawler Analysis Project
+
+The goal of this project is to crawl the top 100 most popular websites and gather and analyze data about HTTP requests, Javascript, and cookies. 
 
 
 ## Third Party HTTP Requests
@@ -8,6 +9,7 @@ Crawl the top 100 websites and detect third party requests and compare with ad-b
 **Observations:**
 * Adblock does cut off a decent number of third party http requests
 * Sites with large amounts of requests dropped significantly after Adblock
+<br />
 
 <img width="800" src="assets/http10.png">
 
@@ -15,13 +17,15 @@ Crawl the top 100 websites and detect third party requests and compare with ad-b
 * Some of these seem to be for collecting user data and how they interact with the site. 
 * Sohu.com, pinimg.com, baidu.com are dropped from the top 10 after adblock is applied
 * Pinimg.com, awsstatic.com seem to see an increase after adblock
-
+<br />
 
 ## Third Party Javascript
 <img width="800" src="assets/javascript.png">
 
 **Observations**
 * Adblock seems to have somewhat minimal but still apparent effect on Javascript scripts
+<br />
+
 <img width="800" src="assets/js10.png">
 
 **Observations**
@@ -29,7 +33,7 @@ Crawl the top 100 websites and detect third party requests and compare with ad-b
 * Contextual media seems to be directly related to advertising and is somewhat reduced
 * Itc.cn, baidu.com, baidustatic.com, wsimg.com seem to have dropped by a decent amount.
 * Media.net, alicdn.com, adobedtm.com, forbesimg.com, see some small drops but still have the highest requests after adblock.
-
+<br />
 
 ## Third Party Cookies
 <img width="800" src="assets/cookies.png">
@@ -39,7 +43,7 @@ Crawl the top 100 websites and detect third party requests and compare with ad-b
 **Observations**
 * Cookies drop a lot after applying adblock
 * Sites with lots of cookies seem to be the most affected
-
+<br />
 
 <img width="800" src="assets/cookies10.png">
 
@@ -47,3 +51,4 @@ Crawl the top 100 websites and detect third party requests and compare with ad-b
 **Observations**
 * Demdex, mmstat.com, Doubleclick.net, Rlcdn.com, adsrvr.org, and pubmatic.com all seem related to advertising. Almost all of them are reduced immensely after applying adblock.
 *Some sites seem to gain cookies after applying adblock like amazon.com and bbc.com
+<br />
